@@ -75,7 +75,7 @@
         }
     }
 
-    @media screen and (mix-width: 900px) {
+    @media screen and (max-width: 900px) {
         display: none;
     }
 }
@@ -104,17 +104,17 @@
         bottom: 0;
         right: 0;
         z-index: 5;
-        
         padding: 1rem;
-        width: 80%;
 
+        width: 80%;
         height: 100vh;
 
         display: flex;
         justify-content: flex-end;
-
-        justify-items: flex-end;
+        // changed fron flex items to align items
+        align-items: flex-end;
         flex-direction: column;
+
         background: url('../../assets/bgWhite.png');
         background-color: var(--white-color);
         background-size: cover;
